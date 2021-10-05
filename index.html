@@ -12,32 +12,54 @@
 </head>
 
 <body>
+    <header>
+        <h1>CONTABLITO - CONTROL DE STOCK</h1>
+    </header>
 
-    <h1>CONTROL DE STOCK</h1>
+    <nav>
+        <a href="#">Registro de productos</a>
+        <a href="#">Movimientos</a>
+    </nav>
 
-    <div>
-        <h2>Registrar Producto</h2>
-
+    <div id="register-product-div">
         <div>
+            <h3>Registrar Producto</h3>
+        </div>
+
+        <div id="form-div">
             <form>
-                <label for="product-name">Nombre:</label><br>
-                <input type="text" id="product-name" name="product-name"><br>
 
-                <label for="product-description">Descripcion:</label><br>
-                <input type="text" id="product-description" name="product-description"><br>
+                <div>
+                    <label for="product-name">Nombre:</label>
+                    <input type="text" id="product-name" name="product-name">
+                </div>
 
-                <label for="product-stock">Cantidad en stock:</label><br>
-                <input type="number" id="product-stock" name="product-stock"><br>
+                <div>
+                    <label for="product-description">Descripcion:</label>
+                    <input type="text" id="product-description" name="product-description">
+                    <br>
+                </div>
 
-                <label for="product-cost">Precio en pesos:</label><br>
-                <input type="number" id="product-cost" name="product-cost"><br>
+                <div>
+                    <label for="product-stock">Cantidad en stock:</label>
+                    <input type="number" id="products-in-stock" name="product-stock">
+                </div>
 
-                <input id="register-product-button" type="button" value="Registrar producto">
+                <div>
+                    <label for="product-cost">Precio en pesos:</label>
+                    <input type="number" id="product-cost" name="product-cost">
+                    <br>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <input id="register-product-button" type="button" value="Registrar producto">
+                </div>
+                
             </form>
         </div>
     </div>
 
-    <div>
+    <div class="d-flex justify-content-center">
         <table id="product-list-table">
             <tr>
                 <th>Nombre</th>

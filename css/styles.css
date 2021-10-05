@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(195, 205, 206);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: rgb(63, 63, 63);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(53, 146, 126);
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    color: white;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    background-color: rgb(253, 187, 129);
+}
+
+#register-product-div {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(53, 146, 126);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: flex;
+    flex: 50%;
+    flex: wrap;
+    flex-flow: column;
+    align-items: center;
+}
+
+#product-list-table {
+    font-size: 1.5em;
+    width: 100%;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: sandybrown;
+    border-collapse: collapse;
+}
+
+input[type=text], input[type=number] {
+    display: inline-block;
+    float: right;
+}
+
+label {
+    padding-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+form div {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(63, 63, 63);
+    border: solid 1px black;
+}
+
+
+@media screen and (max-width: 750px;){
+    nav{
+        flex-direction: column;
+    }
+}
